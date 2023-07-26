@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch-A-Sketch</title>
+  <link rel="stylesheet" href="css/stylex.css">
+</head>
+<body>
+ <div class="flex-container">
+    <div class="title"><h1>Sketchpad</h1></div>
+    <div class="content">
+      <div class="mode">Mode: Coloring</div>
+      <div class="board">
+      </div>
+      <br>
+        <div class="buttons">
+          <button class="blackbutton" onclick="changeColor('black')">Black</button>
+          <button class="erasorbutton" onclick="changeColor(white)">Erasor</button>
+          <button class="graybutton" onclick="changeColor('gray')">Gray</button>
+          <button class="randombutton" onclick="changeColor('random')">Random</button>
+          <button class="resetbutton" onclick="resetBoard()">Reset</button>
+        </div>
+      <div class="input">
+  <input type="text" placeholder="size of board" value="16" onchange="changeSize(this.value)">
+      <button>Set Size</button>
+    </div>
+  </div>
+    <div class="error">
+      <p>Input must be between 2 and 100</p>
+      
+    </div>
+  </div>
+
+</body>
+<script src="js/script.js"></script>
+</html>
